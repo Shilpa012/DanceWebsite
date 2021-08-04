@@ -1,0 +1,25 @@
+extends base.pug
+
+block script 
+    script(src='../static/script.js')
+
+block style
+    style 
+        include ../static/style.css 
+        include ../static/contactstyle.css
+
+block content
+ div.container
+    h1 Contact Us
+    form.loginform#contact(action="/contact", method="POST", class=form-group)
+      .form-group
+         input(type="text",name="name" placeholder="Enter your name")
+      .form-group
+         input(type="phone",name="phone" placeholder="Enter your phone no.")
+      .form-group
+         input(type="email",name="email" placeholder="Enter your email id")
+      .form-group
+         input(type="text",name="address" placeholder="Enter your location")
+      .form-group
+         textarea(name="message", cols="10", rows="10" type="text" placeholder="Enter your Message")
+         button.btn Submit

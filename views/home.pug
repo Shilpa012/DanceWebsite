@@ -1,0 +1,46 @@
+extends base.pug
+
+block script 
+    script(src='../static/script.js')
+
+block style
+    style 
+        include ../static/style.css 
+
+block content 
+    
+    section#intro 
+      div.main-tagline  Welcome to Dancester Academy
+      div.small-tagline Feel the Rhythm & Dance like no one is watching uhh...
+    section#missionSection
+      h2 Danceforms
+      div.block 
+        h3 HipHop
+        img(src="../static/hiphop.jpg")
+        p  We put out real hip-hop at a time when it was turning into pop or R&B. We brought the focus back to the music in its rawest form, without studio polish or radio hooks. 
+          | We’re here to supply that fix.
+      div.block 
+        h3 Ballet
+        img#ballet(src="../static/ballet.png")
+        p Ballet encompasses the "dancer dream", and continues to resonate in the hearts and minds of little girls like no other style of dance. 
+           | Ballet can fit into almost any social setting, making it ideal for either a casual performance with friends or a formal evening date.
+      div.block 
+        h3 Contemprory
+        img#contemprory(src="../static/contemprory.jpg")
+        p Contemporary dance is a 'radical break' from classicism. Many young dancers, 
+          | claim to practice, teach and perform contemporary dance, but actually teach other forms distinct in their own right, such as salsa, ballroom and different variants of jazz.
+    section#sponserSection 
+      h3 Our Sponsers
+        div#sponser
+            div.logo
+                img(src="../static/logo1.png")
+            div.logo
+                img(src="../static/logo2.png")
+            div.logo
+                img(src="../static/logo3.jpg")
+            div.logo
+                img(src="../static/logo4.png")
+            div.logo
+                img(src="../static/logo5.png") 
+
+    

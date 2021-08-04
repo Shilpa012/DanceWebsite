@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Dancester Dance Academy
+        block script 
+        block style
+    body 
+        nav#navbar.top 
+          ul
+            div#logo 
+              img(src="../static/logo.jpg") 
+              h3 Dancester
+            li.list-items #[a(href="/") Home ] 
+            li.list-items #[a(href="/aboutus") About Us]
+            li.list-items #[a(href="/services") Services] 
+            li.list-items #[a(href="/contact") Contact Us]
+
+        block content 
+        footer#footer 
+         h4 Copyright &copy; DancesterDanceAcademy.com. All rights reserved. 

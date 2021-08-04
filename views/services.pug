@@ -1,0 +1,54 @@
+extends base.pug
+
+block script 
+    script(src='../static/script.js')
+
+block style
+    style 
+        include ../static/style.css 
+        include ../static/servicestyle.css
+
+block content
+    section#container 
+        h1 Our Services
+        div.container 
+            h3 *** One Year Certification For Students ***
+            h4  We will provide you Six differnt danceforms. You Can Register Yourself as- 
+        div.participation
+            div.one 
+                h2 As Solo Dancer 
+                h4 Fees : Rs 12,000/student
+            div.two
+                h2 As Duo Dancers 
+                h4 Fees : Rs 10,000/student
+            div.three 
+                h2 As Crew Dancers 
+                h4 Fees : Rs 8,000/student
+            
+    section#missionSection
+        h2 Danceforms uhh can have -
+        div.block 
+            h3 HipHop
+            img(src="../static/hiphop.jpg")
+            p  We put out real hip-hop at a time when it was turning into pop or R&B. We brought the focus back to the music in its rawest form, without studio polish or radio hooks. We’re here to supply that fix.
+        div.block 
+            h3 Ballet
+            img#ballet(src="../static/ballet.png")
+            p Ballet encompasses the "dancer dream", and continues to resonate in the hearts and minds of little girls like no other style of dance. Ballet can fit into almost any social setting, making it ideal for either a casual performance with friends or a formal evening date.
+        div.block 
+            h3 Contemprory
+            img#contemprory(src="../static/contemprory.jpg")
+            p Contemporary dance is a 'radical break' from classicism. Many young dancers, claim to practice, teach and perform contemporary dance, but actually teach other forms distinct in their own right, such as salsa, ballroom and different variants of jazz.
+        div.block 
+            h3 Classical
+            img#ballet(src="../static/classical.jpg")
+            p Classical encompasses the "dancer dream", and continues to resonate in the hearts and minds of little girls like no other style of dance. Ballet can fit into almost any social setting, making it ideal for either a casual performance with friends or a formal evening date.
+        div.block 
+            h3 Robotics
+            img#ballet(src="../static/robotics.jpg")
+            p Robotics encompasses the "dancer dream", and continues to resonate in the hearts and minds of little girls like no other style of dance. Ballet can fit into almost any social setting, making it ideal for either a casual performance with friends or a formal evening date.
+        div.block 
+            h3 Duet
+            img#ballet(src="../static/duet.png")
+            p Duet encompasses the "dancer dream", and continues to resonate in the hearts and minds of little girls like no other style of dance. Ballet can fit into almost any social setting, making it ideal for either a casual performance with friends or a formal evening date.
+   
